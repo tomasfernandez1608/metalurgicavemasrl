@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "emailjs-com";
+import { Helmet } from "react-helmet"; // 🧠 SEO
 
 export default function VemaWebsite() {
   const [showForm, setShowForm] = useState(false);
@@ -59,7 +60,49 @@ export default function VemaWebsite() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 antialiased relative">
-      {/* 🟩 BOTÓN WHATSAPP FLOTANTE CON TOOLTIP */}
+      {/* 🧠 SEO */}
+      <Helmet>
+        <title>VEMA S.R.L. | Metalúrgica en Castelar • Repuestos Industriales</title>
+        <meta
+          name="description"
+          content="VEMA S.R.L. — más de 30 años fabricando repuestos plásticos y metálicos para máquinas industriales en Castelar, Buenos Aires. Soluciones a medida para llenadoras, etiquetadoras, encajonadoras y transportes de producción."
+        />
+        <meta
+          name="keywords"
+          content="metalúrgica Castelar, repuestos industriales Buenos Aires, VEMA SRL, repuestos máquinas industriales, componentes a medida, línea de producción, automatización industria alimenticia gráfica embotellado"
+        />
+        <meta name="author" content="VEMA S.R.L." />
+        <meta property="og:title" content="VEMA S.R.L. | Repuestos industriales en Castelar" />
+        <meta
+          property="og:description"
+          content="Fabricamos componentes plásticos y metálicos a medida para máquinas industriales — industria alimenticia, gráfica y embotellado — en Castelar, Buenos Aires."
+        />
+        <meta property="og:image" content="https://metalurgicavema.com.ar/assets/vema-logo.png" />
+        <meta property="og:url" content="https://metalurgicavema.com.ar" />
+        <link rel="canonical" href="https://metalurgicavema.com.ar" />
+        <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "VEMA S.R.L.",
+            "image": "https://metalurgicavema.com.ar/assets/vema-logo.png",
+            "telephone": "+54 11 2156-1504",
+            "email": "vema@sinectis.com.ar",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Gervasio Pavón 3391",
+              "addressLocality": "Castelar",
+              "addressRegion": "Buenos Aires",
+              "addressCountry": "Argentina"
+            },
+            "url": "https://metalurgicavema.com.ar",
+            "description": "Metalúrgica especializada en repuestos y componentes a medida para máquinas industriales en Castelar, Buenos Aires."
+          }
+        `}</script>
+      </Helmet>
+
+      {/* 💬 BOTÓN WHATSAPP FLOTANTE */}
       <div
         className="fixed bottom-5 right-5 z-[9999] flex flex-col items-end"
         onMouseEnter={() => setShowTooltip(true)}
@@ -88,7 +131,6 @@ export default function VemaWebsite() {
           animate={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
         >
-          {/* Ícono WhatsApp SVG */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
@@ -99,6 +141,7 @@ export default function VemaWebsite() {
           </svg>
         </motion.a>
       </div>
+
 
       {/* 🟦 Navbar */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
