@@ -61,7 +61,6 @@ export default function VemaWebsite() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 antialiased relative">
       <Helmet>
-  {/* 🔹 SEO principal */}
   <title>Metalúrgica Vema S.R.L. | Repuestos Industriales en Castelar</title>
   <meta
     name="description"
@@ -75,7 +74,7 @@ export default function VemaWebsite() {
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://metalurgicavemasrl.vercel.app/" />
 
-  {/* 🔹 Open Graph para WhatsApp / Facebook / LinkedIn */}
+  {/* Open Graph (Facebook / WhatsApp / LinkedIn) */}
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_AR" />
   <meta property="og:url" content="https://metalurgicavemasrl.vercel.app/" />
@@ -91,7 +90,7 @@ export default function VemaWebsite() {
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  {/* 🔹 Twitter Card (también usada por WhatsApp Web) */}
+  {/* Twitter Card (también usada por WhatsApp Web) */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Metalúrgica Vema S.R.L." />
   <meta
@@ -103,7 +102,7 @@ export default function VemaWebsite() {
     content="https://metalurgicavemasrl.vercel.app/assets/vema-logo.png"
   />
 
-  {/* 🔹 Datos estructurados (para Google) */}
+  {/* Datos estructurados (para Google) */}
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
@@ -124,6 +123,7 @@ export default function VemaWebsite() {
     }
   `}</script>
 </Helmet>
+
 
 
       {/* 💬 BOTÓN WHATSAPP FLOTANTE */}
