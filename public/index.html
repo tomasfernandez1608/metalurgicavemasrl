@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-  
+    <meta name="theme-color" content="#003366" />
+
+    <!-- 🧠 SEO principal -->
     <title>Metalúrgica Vema S.R.L. | Repuestos Industriales en Castelar</title>
-  
     <meta
       name="description"
       content="Metalúrgica Vema S.R.L. fabrica repuestos y componentes a medida para máquinas industriales. Más de 30 años de experiencia en Castelar, Buenos Aires."
@@ -19,8 +18,8 @@
     <meta name="author" content="Metalúrgica Vema S.R.L." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://metalurgicavemasrl.vercel.app/" />
-  
-    <!-- 🟦 Open Graph (WhatsApp, Facebook, LinkedIn) -->
+
+    <!-- 🟦 Open Graph (Facebook / WhatsApp / LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_AR" />
     <meta property="og:url" content="https://metalurgicavemasrl.vercel.app/" />
@@ -31,11 +30,11 @@
     />
     <meta
       property="og:image"
-      content="https://drive.google.com/uc?export=view&id=1bCe30M-sOTma0aPRu8CX30p7nNSAtd4T"
+      content="https://metalurgicavemasrl.vercel.app/vema-logo.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-  
+
     <!-- 🟩 Twitter / WhatsApp Web -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Metalúrgica Vema S.R.L." />
@@ -45,26 +44,38 @@
     />
     <meta
       name="twitter:image"
-      content="https://drive.google.com/uc?export=view&id=1bCe30M-sOTma0aPRu8CX30p7nNSAtd4T"
+      content="https://metalurgicavemasrl.vercel.app/vema-logo.jpg"
     />
-  
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- 📱 Iconos y manifest -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/vema-logo.jpg" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/vema-logo.jpg" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- 📦 Schema.org (para Google) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Metalúrgica Vema S.R.L.",
+        "image": "https://metalurgicavemasrl.vercel.app/vema-logo.jpg",
+        "url": "https://metalurgicavemasrl.vercel.app/",
+        "telephone": "+54 11 2156-1504",
+        "email": "vema@sinectis.com.ar",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gervasio Pavón 3391",
+          "addressLocality": "Castelar",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "Argentina"
+        },
+        "description": "Repuestos y componentes industriales a medida. Más de 30 años de experiencia en Castelar, Buenos Aires."
+      }
+    </script>
   </head>
-  
-  
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Necesitás habilitar JavaScript para usar esta web.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
