@@ -540,7 +540,7 @@ export default function VemaWebsite() {
             <ul className="space-y-2 text-sm text-blue-100">
               <li>Tel: 11 2156-1504 / 2201-8776</li>
               <li>Email: vema@sinectis.com.ar</li>
-              <li>Dirección: Gervasio Pavón 3391, Morón, Buenos Aires</li>
+              <li>Dirección: Gervasio Pavón 3391, Castelar, Buenos Aires</li>
             </ul>
           </div>
           <div>
