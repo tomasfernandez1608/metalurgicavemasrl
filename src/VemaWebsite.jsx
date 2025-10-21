@@ -60,47 +60,70 @@ export default function VemaWebsite() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 antialiased relative">
-      {/* 🧠 SEO */}
       <Helmet>
-        <title>VEMA S.R.L. | Metalúrgica en Castelar • Repuestos Industriales</title>
-        <meta
-          name="description"
-          content="VEMA S.R.L. — más de 30 años fabricando repuestos plásticos y metálicos para máquinas industriales en Castelar, Buenos Aires. Soluciones a medida para llenadoras, etiquetadoras, encajonadoras y transportes de producción."
-        />
-        <meta
-          name="keywords"
-          content="metalúrgica Castelar, repuestos industriales Buenos Aires, VEMA SRL, repuestos máquinas industriales, componentes a medida, línea de producción, automatización industria alimenticia gráfica embotellado"
-        />
-        <meta name="author" content="VEMA S.R.L." />
-        <meta property="og:title" content="VEMA S.R.L. | Repuestos industriales en Castelar" />
-        <meta
-          property="og:description"
-          content="Fabricamos componentes plásticos y metálicos a medida para máquinas industriales — industria alimenticia, gráfica y embotellado — en Castelar, Buenos Aires."
-        />
-        <meta property="og:image" content="https://metalurgicavema.com.ar/assets/vema-logo.png" />
-        <meta property="og:url" content="https://metalurgicavema.com.ar" />
-        <link rel="canonical" href="https://metalurgicavema.com.ar" />
-        <meta name="robots" content="index, follow" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "VEMA S.R.L.",
-            "image": "https://metalurgicavema.com.ar/assets/vema-logo.png",
-            "telephone": "+54 11 2156-1504",
-            "email": "vema@sinectis.com.ar",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Gervasio Pavón 3391",
-              "addressLocality": "Castelar",
-              "addressRegion": "Buenos Aires",
-              "addressCountry": "Argentina"
-            },
-            "url": "https://metalurgicavema.com.ar",
-            "description": "Metalúrgica especializada en repuestos y componentes a medida para máquinas industriales en Castelar, Buenos Aires."
-          }
-        `}</script>
-      </Helmet>
+  {/* 🔹 SEO Principal */}
+  <title>Metalúrgica Vema S.R.L. | Repuestos Industriales en Castelar</title>
+  <meta
+    name="description"
+    content="En Metalúrgica Vema S.R.L. fabricamos repuestos y componentes a medida para máquinas industriales. Más de 30 años de experiencia brindando soluciones a la industria alimenticia, gráfica y de embotellado."
+  />
+  <meta
+    name="keywords"
+    content="metalúrgica Castelar, repuestos industriales, VEMA SRL, componentes industriales, repuestos a medida, industria alimenticia, gráfica, embotellado"
+  />
+  <meta name="author" content="Metalúrgica Vema S.R.L." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://metalurgicavema.com.ar" />
+
+  {/* 🔹 Open Graph (Facebook / WhatsApp / LinkedIn) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:url" content="https://metalurgicavema.com.ar" />
+  <meta property="og:title" content="Metalúrgica Vema S.R.L." />
+  <meta
+    property="og:description"
+    content="Fabricamos repuestos plásticos y metálicos a medida para máquinas industriales. Más de 30 años de experiencia en Castelar, Buenos Aires."
+  />
+  <meta
+    property="og:image"
+    content="https://metalurgicavema.com.ar/assets/vema-logo.png"
+  />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  {/* 🔹 Twitter Card (también usada por WhatsApp Web en algunos casos) */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Metalúrgica Vema S.R.L." />
+  <meta
+    name="twitter:description"
+    content="Repuestos y componentes industriales a medida. Más de 30 años de experiencia en la industria argentina."
+  />
+  <meta
+    name="twitter:image"
+    content="https://metalurgicavema.com.ar/assets/vema-logo.png"
+  />
+
+  {/* 🔹 Datos estructurados para Google */}
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Metalúrgica Vema S.R.L.",
+      "image": "https://metalurgicavema.com.ar/assets/vema-logo.png",
+      "telephone": "+54 11 2156-1504",
+      "email": "vema@sinectis.com.ar",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Gervasio Pavón 3391",
+        "addressLocality": "Castelar",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "Argentina"
+      },
+      "url": "https://metalurgicavema.com.ar",
+      "description": "Fabricamos repuestos y componentes industriales a medida con más de 30 años de experiencia en Castelar."
+    }
+  `}</script>
+</Helmet>
 
       {/* 💬 BOTÓN WHATSAPP FLOTANTE */}
       <div
@@ -314,31 +337,51 @@ export default function VemaWebsite() {
         id="inicio"
         className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
       >
-        {/* Carrusel de imágenes */}
+        {/* Carrusel de imágenes */}  
+<motion.div
+  initial={{ opacity: 0, scale: 0.9 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.7 }}
+  className="bg-white rounded-2xl p-6 shadow-md overflow-hidden relative"
+>
+  <div className="relative w-full h-80 rounded-xl overflow-hidden">
+    {(() => {
+      // 📸 Lista de imágenes — solo editá esto si querés agregar más
+      const images = [
+        "vema-hero1.jpg",
+        "vema-hero2.jpg",
+        "vema-hero3.jpg",
+        "vema-hero4.jpg",
+      ];
+
+      // 🔁 Crea un array de posiciones en porcentaje según la cantidad de imágenes
+      const steps = images.map((_, i) => `-${i * 100}%`).concat("0%");
+
+      return (
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-          className="bg-white rounded-2xl p-6 shadow-md overflow-hidden relative"
+          className="flex w-full h-full"
+          animate={{ x: steps }}
+          transition={{
+            duration: images.length * 6, // 6s por imagen (ajustable)
+            ease: "easeInOut",
+            repeat: Infinity,
+          }}
         >
-          <div className="relative w-full h-80 rounded-xl overflow-hidden">
-            <motion.div
-              className="flex w-full h-full"
-              animate={{ x: ["0%", "-100%", "-200%", "0%"] }}
-              transition={{ duration: 18, ease: "easeInOut", repeat: Infinity }}
-            >
-              {["vema-hero1.jpg", "vema-hero2.jpg", "vema-hero3.jpg"].map((img, i) => (
-                <div key={i} className="min-w-full h-full">
-                  <img
-                    src={`/assets/${img}`}
-                    alt={`Imagen ${i + 1}`}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-              ))}
-            </motion.div>
-          </div>
+          {images.map((img, i) => (
+            <div key={i} className="min-w-full h-full">
+              <img
+                src={`/assets/${img}`}
+                alt={`Imagen ${i + 1}`}
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+          ))}
         </motion.div>
+      );
+    })()}
+  </div>
+</motion.div>
+
 
         {/* Texto de presentación */}
         <motion.div
