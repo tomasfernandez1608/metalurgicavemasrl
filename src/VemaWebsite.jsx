@@ -61,7 +61,7 @@ export default function VemaWebsite() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 antialiased relative">
       <Helmet>
-  {/* 🔹 SEO Principal */}
+  {/* 🔹 SEO principal */}
   <title>Metalúrgica Vema S.R.L. | Repuestos Industriales en Castelar</title>
   <meta
     name="description"
@@ -73,12 +73,12 @@ export default function VemaWebsite() {
   />
   <meta name="author" content="Metalúrgica Vema S.R.L." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://metalurgicavema.com.ar" />
+  <link rel="canonical" href="https://metalurgicavemasrl.vercel.app/" />
 
-  {/* 🔹 Open Graph (Facebook / WhatsApp / LinkedIn) */}
+  {/* 🔹 Open Graph para WhatsApp / Facebook / LinkedIn */}
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_AR" />
-  <meta property="og:url" content="https://metalurgicavema.com.ar" />
+  <meta property="og:url" content="https://metalurgicavemasrl.vercel.app/" />
   <meta property="og:title" content="Metalúrgica Vema S.R.L." />
   <meta
     property="og:description"
@@ -86,12 +86,12 @@ export default function VemaWebsite() {
   />
   <meta
     property="og:image"
-    content="https://metalurgicavema.com.ar/assets/vema-logo.png"
+    content="https://metalurgicavemasrl.vercel.app/assets/vema-logo.png"
   />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  {/* 🔹 Twitter Card (también usada por WhatsApp Web en algunos casos) */}
+  {/* 🔹 Twitter Card (también usada por WhatsApp Web) */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Metalúrgica Vema S.R.L." />
   <meta
@@ -100,16 +100,16 @@ export default function VemaWebsite() {
   />
   <meta
     name="twitter:image"
-    content="https://metalurgicavema.com.ar/assets/vema-logo.png"
+    content="https://metalurgicavemasrl.vercel.app/assets/vema-logo.png"
   />
 
-  {/* 🔹 Datos estructurados para Google */}
+  {/* 🔹 Datos estructurados (para Google) */}
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Metalúrgica Vema S.R.L.",
-      "image": "https://metalurgicavema.com.ar/assets/vema-logo.png",
+      "image": "https://metalurgicavemasrl.vercel.app/assets/vema-logo.png",
       "telephone": "+54 11 2156-1504",
       "email": "vema@sinectis.com.ar",
       "address": {
@@ -119,11 +119,12 @@ export default function VemaWebsite() {
         "addressRegion": "Buenos Aires",
         "addressCountry": "Argentina"
       },
-      "url": "https://metalurgicavema.com.ar",
-      "description": "Fabricamos repuestos y componentes industriales a medida con más de 30 años de experiencia en Castelar."
+      "url": "https://metalurgicavemasrl.vercel.app/",
+      "description": "Fabricamos repuestos y componentes industriales a medida con más de 30 años de experiencia en Castelar, Buenos Aires."
     }
   `}</script>
 </Helmet>
+
 
       {/* 💬 BOTÓN WHATSAPP FLOTANTE */}
       <div
