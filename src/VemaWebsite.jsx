@@ -556,9 +556,7 @@ export default function VemaWebsite() {
           <div>
             <h4 className="font-semibold mb-3">Síguenos</h4>
             <div className="flex gap-3">
-              <a href="#" className="hover:text-blue-300">Facebook</a>
-              <a href="#" className="hover:text-blue-300">LinkedIn</a>
-              <a href="#" className="hover:text-blue-300">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=61578265752279" className="hover:text-blue-300">Facebook</a>
             </div>
           </div>
         </div>
