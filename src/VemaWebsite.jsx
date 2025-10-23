@@ -349,10 +349,13 @@ export default function VemaWebsite() {
     {(() => {
       // 📸 Lista de imágenes — solo editá esto si querés agregar más
       const images = [
-        "vema-hero1.jpg",
-        "vema-hero2.jpg",
-        "vema-hero3.jpg",
+        "vema-hero10.jpg",
+        "vema-hero11.jpg",
+        "vema-hero12.jpg",
         "vema-hero4.jpg",
+        "vema-hero13.jpg",
+        "vema-hero14.jpg",
+        "vema-hero15.jpg",
       ];
 
       // 🔁 Crea un array de posiciones en porcentaje según la cantidad de imágenes
